@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+{% for id in ids: %}
+          <center>
+              <h1>
+                  <a href='/blog?id={{id.id}}'>
+              {{ id.title }}
+                  </a>
+              </h1>
+          </center>
+          <p>
+              {{id.body}}
+          </p>
+<hr item-width="5" length="50"/>
+    {% endfor %}
+{% endblock %}
